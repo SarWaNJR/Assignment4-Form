@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-image: url(images/2560x1600_px_food_Pizza-1226694.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        h1 {
+            color: #FF0000;
+            font-size: 3em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3 {
+            color: tan;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction:column;
+            
+        }
+
+        #color {
+            background-color: wheat;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .next {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+        @media only screen and (min-width: 600px) {
+            .container{
+                width: 50%;
+                      }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="kycform.html" class="previous">&laquo; Previous</a>
+    <a href="aplicationform.html" class="next">Next &raquo;</a>
+
+    <a href="kycform.html" class="previous round">&#8249;</a>
+    <a href="aplicationform.html" class="next round">&#8250;</a>
+    <fieldset class="container">
+        <h1>Pizza house</h1>
+        <h3>Order pizza</h3>
+        <p>Select the pizza size:</p>
+        <input type="radio">Big<br>
+        <input type="radio">Medium<br>
+        <input type="radio">Small<br><br>
+        <b>Select the Crust type:</b><br>
+        <select>
+            <option>Extreme cheese</option>
+            <option>Crispy thin</option>
+            <option>Soft pan</option>
+            <option>sausage 1</option>
+            <option>sausage 2</option>
+            <option>sausage&cheese</option>
+        </select><br><br>
+        <b>Select the Filler:</b><br>
+        <input type="checkbox" name="Sausages" checked>Sausages<br>
+        <input type="checkbox" name="Sausages" readonly>Peper<br>
+        <input type="checkbox" name="Sausages">Mushrooms<br><br>
+        Name:<input type="text" size="20"><br>
+        Ph No:<input type="text" size="20" placeholder="+91 XXX-XXX-XX-XX"><br>
+        <textarea name="" id="" cols="30" rows="5"
+            placeholder="Please enter ur current location to order ur pizza"></textarea><br>
+        <input type="file" name="Choose ur location"><br>
+        <input type="submit" value="take order" id="color">
+
+
+    </fieldset>
+
+</body>
+
+</html>
